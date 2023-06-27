@@ -1,8 +1,16 @@
+@php
+$menuItems = config('menu');
+    
+@endphp
+
 <nav>
     <ul>
-        <li><a href="{{ route('home') }}">HOME</a></li>
-        <li><a href="{{ route('about') }}">ABOUT</a></li>
-        <li><a href="{{ route('film') }}">FILM LIST</a></li>
+      @foreach (config('menu') as $menuItems)
+         <li><a href="{{ route($menuItems['route']) }}">{{$menuItems['name']}}</a></li> 
+      @endforeach
+        
         
     </ul>
 </nav>
+
+
