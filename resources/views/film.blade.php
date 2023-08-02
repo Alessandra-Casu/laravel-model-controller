@@ -7,7 +7,7 @@
         @foreach ($collMovies as $movie)
         <div class="col">
          
-                <div class="card h-100">
+                <div class="card h-100 card-movies">
                 {{-- <img src="{{Vite::asset('resources/img/'. $movie->img) }}" class="card-img-top h-75" alt="{{$movie->title}}"> --}}
                 <div class="card-body">
                   <h5 class="card-title">{{$movie->title}}</h5>

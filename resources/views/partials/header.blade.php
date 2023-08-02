@@ -1,8 +1,8 @@
 
 
 <header>
-    <div class="container">
-        <h1>Boolean Books</h1>
+    <div class="container d-flex justify-content-between w-100">
+        <h1>Boolean Movies</h1>
         @include('partials.navbar')
     </div>
 </header>

@@ -4,12 +4,10 @@ $menuItems = config('menu');
 @endphp
 
 <nav>
-    <ul>
+    <ul  class="d-flex justify-content-center align-items-center h-100">
       @foreach (config('menu') as $menuItems)
-         <li><a href="{{ route($menuItems['route']) }}">{{$menuItems['name']}}</a></li> 
-      @endforeach
-        
-        
+         <li class="p-2"><a href="{{ route($menuItems['route']) }}">{{$menuItems['name']}}</a></li> 
+      @endforeach  
     </ul>
 </nav>
 
